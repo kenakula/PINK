@@ -1,0 +1,72 @@
+.promo {
+  position: relative;
+  margin-top: -65px;
+  color: $white;
+}
+
+.promo__inner {
+  position: relative;
+
+  padding-top: 95px;
+  margin-top: auto;
+  min-height: 462px;
+  width: 100%;
+  background-color: $grey;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+                    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto, cover;
+}
+
+.promo__slogan {
+  margin: 0 auto;
+  padding: 0;
+  width: 71%;
+  font-family: $font-light;
+  font-size: 24px;
+  text-align: center;
+}
+
+.promo__download {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: $dark-grey;
+}
+
+.promo__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 280px;
+  height: 55px;
+  border: 3px solid $white;
+  border-radius: 40px;
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 19px;
+  color: $white;
+  background-color: transparent;
+}
+
+.promo__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 64%;
+}
+
+.promo__text {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}

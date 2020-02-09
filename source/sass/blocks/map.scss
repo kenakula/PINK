@@ -1,0 +1,26 @@
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map__wrapper {
+  position: relative;
+  margin-top: -440px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 10px solid $white;
+    background-color: $lipstick;
+  }
+}
+
+.map__picture {
+  width: 100%;
+}

@@ -14,8 +14,278 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+            <picture>
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            </picture>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="promo">
+      <div class="promo__inner">
+        <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+      </div>
+      <div class="promo__download">
+        <button class="promo__button" type="button">Скачать приложение</button>
+        <div class="promo__devices">
+          <ul class="promo__list">
+            <li class="promo__item">
+              <img src="img/logo-apple.svg" width="47" height="56" alt="логотип Эппл">
+            </li>
+            <li class="promo__item">
+              <img src="img/logo-android.svg" width="43" height="47" alt="логотип Андроид">
+            </li>
+            <li class="promo__item">
+              <img src="img/logo-microsoft.svg" width="44" height="44" alt="логотип Виндоус Фон">
+            </li>
+          </ul>
+          <p class="promo__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <header class="advantages__header">
+        <p class="advantages__promo">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="advantages__promo">
+          Нам есть, что вам предложить!
+        </p>
+      </header>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <div class="advantages__phone">
+        <picture>
+          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона" class="advantages__image">
+        </picture>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <ul class="reviews__list">
+          <li class="reviews__item reviews__item--active">
+            <blockquote>
+              <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote>
+              <cite class="reviews__author">Василий Ложкин</cite>
+              <p class="reviews__text">
+                «Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis iste alias rerum cupiditate excepturi quidem atque, corrupti inventore labore.»
+              </p>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote>
+              <cite class="reviews__author">Сидр Васильев</cite>
+              <p class="reviews__text">
+                «Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quos reprehenderit blanditiis nemo. Aliquid quidem unde rem provident ullam, placeat accusantium tempora cupiditate itaque id assumenda voluptatum iure esse veniam.»
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+      <div class="reviews__controls">
+        <div class="reviews__dots">
+          <span class="reviews__dot reviews__dot--active"></span>
+          <span class="reviews__dot"></span>
+          <span class="reviews__dot"></span>
+        </div>
+      </div>
+    </section>
+    <section class="fire-rates">
+      <div class="fire-rates__wrapper">
+        <ul class="fire-rates__list">
+          <li class="fire-rates__item">
+            <header class="fire-rates__header">
+              <h3 class="fire-rates__title">Эконом</h3>
+              <span class="fire-rates__price">0 USD</span>
+            </header>
+            <table class="fire-rates__table">
+              <tbody>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Розовый фильтр</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--disabled">
+                  <td>Смайлики</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--disabled">
+                  <td>Комментарии</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="fire-rates__item fire-rates__item--hit fire-rates__item--active">
+            <header class="fire-rates__header">
+              <h3 class="fire-rates__title">Стандарт</h3>
+              <span class="fire-rates__price">3,99 USD</span>
+            </header>
+            <table class="fire-rates__table">
+              <tbody>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Розовый фильтр</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Смайлики</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--disabled">
+                  <td>Комментарии</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="fire-rates__item">
+            <header class="fire-rates__header">
+              <h3 class="fire-rates__title">Лакшери</h3>
+              <span class="fire-rates__price">10 USD</span>
+            </header>
+            <table class="fire-rates__table">
+              <tbody>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Розовый фильтр</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Смайлики</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr class="fire-rates__perk fire-rates__perk--enabled">
+                  <td>Комментарии</td>
+                  <td>
+                    <svg class="fire-rates__icon" width="31" height="31">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        <div class="fire-rates__controls">
+          <div class="fire-rates__dots">
+            <span class="fire-rates__dot"></span>
+            <span class="fire-rates__dot fire-rates__dot--active"></span>
+            <span class="fire-rates__dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__title">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+      <div class="contacts__inner contacts__phone">
+        <p class="contacts__text">
+          Звоните:
+        </p>
+        <a href="tel:+78125556666" class="contacts__contact">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__inner contacts__mail">
+        <p class="contacts__text">
+          Пишите:
+        </p>
+        <a href="email:mail@htmlacademy.ru" class="contacts__contact">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__inner contacts__address">
+        <p class="contacts__text">
+          Приезжайте в гости:
+        </p>
+        <address class="contacts__contact">
+          ул. Большая Конюшенная, 19/8
+        </address>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <picture>
+          <img class="map__picture" width="320" height="645" src="img/bg-map-mobile@1x.png" alt="карта офиса">
+        </picture>
+      </div>
+    </section>
   </body>
 </html>

@@ -2,3 +2,13 @@
 @import "global.scss";
 @import "normalize.scss";
 @import "fonts.scss";
+@import "mixins.scss";
+//index
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/fire-rates.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map";
