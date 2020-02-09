@@ -15,8 +15,8 @@
 }
 
 .reviews__list {
-  position: relative;
   @include list-reset;
+  position: relative;
 
   &::after {
     content: "";
