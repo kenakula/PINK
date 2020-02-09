@@ -1,0 +1,111 @@
+.publish__header {
+  padding: 30px 0;
+}
+
+.publish__text {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 14px;
+  line-height: 30px;
+  color: $grey;
+  text-align: center;
+}
+
+.publish__wrapper {
+  padding-top: 15px;
+  background-color: $white-two;
+}
+
+.publish__photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.publish__settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 40px;
+  border-bottom: 1px solid $white-three;
+
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.publish__controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.publish__icon {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  color: rgba($color: $grey, $alpha: 0.3);
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: $lipstick;
+  }
+}
+
+.publish__track {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: $black;
+}
+
+.publish__thumb {
+  @include button-reset;
+
+  position: absolute;
+  left: 50%;
+  margin-left: -7px;
+  margin-top: -7px;
+  width: 14px;
+  height: 15px;
+  background-image: url("../../img/icon-editor-diagram-fill.svg");
+  background-color: $white;
+  color: $lipstick;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.publish__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.publish__button {
+  @include button-reset;
+
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border: 3px solid $lipstick;
+  border-radius: 30px;
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $lipstick;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:disabled {
+    color: $white-three;
+    border-color: $white-three;
+  }
+}

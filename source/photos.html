@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк | Фотографии</title>
+    <script src="js/picturefill.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+            <picture>
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            </picture>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="inner-page">
+      <div class="inner-page__wrapper">
+        <h1 class="inner-page__title">Фотографии пользователей</h1>
+      </div>
+      <p class="inner-page__text">
+        Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
+      </p>
+      <section class="photos">
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
+        <ul class="photos__list">
+          <li class="photos__item photos__item--panoram">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Анна</cite>
+                <span class="photos__timeout">(5 минут назад)</span>
+                <p class="photos__text">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">215</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-car-mobile@1x.jpg" alt="Фото автомобиля перед камерой">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Левон</cite>
+                <span class="photos__timeout">(5 часов назад)</span>
+                <p class="photos__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">356</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото барабанной установки">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Антон</cite>
+                <span class="photos__timeout">(12 часов назад)</span>
+                <p class="photos__text">
+                  Соседи будут рады!
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">666</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-window-mobile@1x.jpg" alt="Фото окна">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Борис</cite>
+                <span class="photos__timeout">(20 часов назад)</span>
+                <p class="photos__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">215</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото кубанской ярмарки">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Сергей</cite>
+                <span class="photos__timeout">(25 часов назад)</span>
+                <p class="photos__text">
+                  Самая кубанская в мире!
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">4</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" alt="Вид с холма">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Максим</cite>
+                <span class="photos__timeout">(40 часов назад)</span>
+                <p class="photos__text">
+                  Где снег-то?
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">150</span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="photos__item">
+            <div class="photos__container">
+              <picture>
+                <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото крыла самолета в полете">
+              </picture>
+            </div>
+            <div class="photos__comment">
+              <blockquote class="photos__quote">
+                <cite class="photos__author">Надежда</cite>
+                <span class="photos__timeout">(45 часов назад)</span>
+                <p class="photos__text">
+                  Всем GM и взаимные лайки!
+                </p>
+              </blockquote>
+              <div class="photos__likes likes">
+                <button class="liked__heart">Сердечко</button>
+                <span class="likes__count">
+                  Нравится <span class="likes__number">2560</span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="publish">
+        <header class="publish__header">
+          <p class="publish__text">
+            Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </header>
+        <div class="publish__wrapper">
+          <div class="publish__photo-container">
+            <picture>
+              <img class="publish__image" src="img\photo-road-mobile@1x.jpg" alt="Фото зимней дороги">
+            </picture>
+          </div>
+          <div class="publish__settings">
+            <div class="publish__controls">
+              <button class="publish__icon publish__icon--crop publish__icon--active">
+                Обрезать
+                <svg width="44" height="44">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+              </button>
+              <button class="publish__icon publish__icon--fill">
+                Фильтр
+                <svg width="48" height="43">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+              </button>
+              <button class="publish__icon publish__icon--contrast">
+                Контраст
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="publish__range">
+              <div class="publish__track">
+                <button class="publish__thumb">
+                  Ползунок
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-editor-diagram-fill"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="publish__buttons">
+            <button class="publish__button publish__button--send">Отправить</button>
+            <button class="publish__button publish__button--cancel" disabled>Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <picture>
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк">
+        </picture>
+      </div>
+      <div class="page-footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--tw" href="#">Мы в твиттере</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--fb" href="#">Мы в фейсбук</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--ut" href="#">Мы в ютьюб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyrights copyrights">
+        <a class="copyrights__link" href="">
+          Разработано
+          <svg width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

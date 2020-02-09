@@ -1,0 +1,34 @@
+.socials__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid $white-three;
+  font-size: 0;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--ut {
+    background-image: url("../img/icon-youtube.svg");
+  }
+}

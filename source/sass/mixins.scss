@@ -4,6 +4,19 @@
   list-style: none;
 }
 
+@mixin full-width-vw {
+  margin-left: calc(-100vw / 2 + 280px / 2);
+  margin-right: calc(-100vw / 2 + 280px / 2);
+}
+
+@mixin button-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+}
+
 @mixin ie-active-fix {
   content: "";
   display: block;
