@@ -1,0 +1,22 @@
+.modal {
+  display: none;
+  padding: 40px 20px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $grey;
+  text-align: center;
+}

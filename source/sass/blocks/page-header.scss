@@ -1,12 +1,16 @@
 .page-header {
   position: relative;
   color: $white;
+  background-color: $grey;
+  z-index: 100;
+
+  &--transparent {
+    background-color: rgba($color: $black, $alpha: 0.3)
+  }
 }
 
 .page-header__top {
   position: relative;
-  background-color: $grey;
-  z-index: 100;
 }
 
 .page-header__wrapper {
