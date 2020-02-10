@@ -6,9 +6,15 @@
   var toggleButton = nav.querySelector('.main-nav__toggle');
   var menu = nav.querySelector('.main-nav__list');
 
+  var changeToggleButtonText = function () {
+    toggleButton.classList.contains('main-nav__toggle--close') ?
+    toggleButton.innerHTML = 'Закрыть меню' :
+    toggleButton.innerHTML = 'Открыть меню';
+  }
 
   var changeToggleButtonState = function () {
     toggleButton.classList.toggle('main-nav__toggle--close')
+    changeToggleButtonText();
   };
 
   var changeHeaderTransparancy = function () {
