@@ -3,3 +3,12 @@
   justify-content: center;
   padding: 35px 0;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+}

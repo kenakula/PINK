@@ -29,7 +29,7 @@
 
   &--close::before,
   &--close::after {
-    left: -19px;
+    left: -20px;
     width: 30px;
     height: 4px;
   }
@@ -78,4 +78,19 @@
 .main-nav__link {
   color: $white;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    top: 55px;
+  }
+
+  .main-nav__toggle--close {
+    top: 35px;
+  }
+
+  .main-nav__toggle--close::before,
+  .main-nav__toggle--close::after {
+    top: 20px;
+  }
 }

@@ -54,6 +54,10 @@
   font-size: 18px;
 }
 
+.reviews__occupation {
+  display: none;
+}
+
 .reviews__text {
   margin: 0;
 }
@@ -89,5 +93,44 @@
     border-radius: 50%;
     background: none;
     border: 3px solid $grey;
+  }
+}
+
+@media (min-width: $tablet) {
+  .reviews {
+    &::after {
+      bottom: -40px;
+      width: 660px;
+      border-style: solid;
+      border-width: 40px 660px 0 0;
+      border-color: $white transparent transparent transparent;
+    }
+  }
+
+  .reviews__item {
+    blockquote {
+      display: flex;
+      flex-direction: column;
+      width: 92%;
+    }
+  }
+
+  .reviews__author {
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  .reviews__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    order: 0;
+  }
+
+  .reviews__occupation {
+    display: block;
+    font-family: $font-regular;
+    font-size: 14px;
+    color: $grey;
   }
 }

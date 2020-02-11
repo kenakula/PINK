@@ -1,0 +1,60 @@
+.research {
+  display: flex;
+  padding: 90px 34px 60px;
+}
+
+.research__inner {
+  margin-left: auto;
+  width: 50%;
+}
+
+.research__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.research__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: $lipstick;
+}
+
+.research__timer {
+  position: relative;
+  margin-top: -25px;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 138px;
+    left: 66px;
+    font-family: $font-bold;
+    font-size: 96px;
+    color: $lipstick;
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.research-img {
+  color: $timer-color;
+}
+
+.research-diagram {
+  position: absolute;
+  left: 19px;
+  top: 55px;
+  color: $lipstick;;
+}

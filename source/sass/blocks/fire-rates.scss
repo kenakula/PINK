@@ -143,3 +143,22 @@
     border: 3px solid $grey;
   }
 }
+
+@media (min-width: $tablet) {
+  .fire-rates {
+    padding-bottom: 70px;
+  }
+
+  .fire-rates__list {
+    display: flex;
+  }
+
+  .fire-rates__item {
+    display: block;
+    flex-grow: 1;
+  }
+
+  .fire-rates__controls {
+    display: none;
+  }
+}

@@ -69,3 +69,42 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .promo {
+    margin-top: -115px;
+    min-height: 729px;
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right 18px, center;
+    background-size: contain, cover;
+  }
+
+  .promo__inner {
+    padding-top: 213px;
+    padding-left: 8%;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .promo__slogan {
+    margin: 0;
+    width: 35%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .promo__download {
+    margin-top: -120px;
+    width: 320px;
+    background-color: transparent;
+  }
+
+  .promo__button {
+    margin-bottom: 45px;
+  }
+
+  .promo__list {
+    margin-bottom: 40px;
+  }
+}
