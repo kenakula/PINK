@@ -3,6 +3,9 @@
   margin-top: -67px;
   min-height: 240px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .inner-page__title {
@@ -24,4 +27,31 @@
   line-height: 30px;
   text-align: center;
   color: $grey;
+}
+
+@media (min-width: $tablet) {
+  .inner-page__wrapper {
+    margin-top: -115px;
+    padding-top: 125px;
+    min-height: 440px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: auto;
+    background-position: top center;
+  }
+
+  .inner-page__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .inner-page__text {
+    padding: 70px 0;
+    width: 75%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .inner-page__line-break {
+    display: none;
+  }
 }

@@ -10,6 +10,7 @@
 
   &--panoram {
     position: relative;
+    width: 100%;
 
     .photos__container {
       @include full-width-vw;
@@ -65,4 +66,32 @@
 
 .photos__image {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item {
+    &--panoram {
+      &::before {
+        top: 5%;
+        right: 10%;
+      }
+    }
+  }
+
+  .photos__item:not(.photos__item--panoram) {
+    width: 50%;
+  }
+
+  .photos__comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+  }
 }

@@ -34,3 +34,13 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .map__wrapper {
+    margin-top: -200px;
+
+    &::before {
+      bottom: 260px;
+    }
+  }
+}

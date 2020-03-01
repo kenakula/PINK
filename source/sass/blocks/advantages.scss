@@ -66,15 +66,21 @@
   text-align: center;
 }
 
-.advantages__phone {
+.advantages__phones-list {
+  @include list-reset;
+
   display: flex;
   justify-content: center;
   padding-top: 40px;
   background-color: $white-two;
 }
 
-.advantages__research {
+.advantages__phones-item {
   display: none;
+
+  &:last-child {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -121,7 +127,7 @@
     text-align: left;
   }
 
-  .advantages__phone {
+  .advantages__phones-list {
     margin-right: 40px;
     order: 0;
 
@@ -132,8 +138,66 @@
       height: 547px;
     }
   }
+}
 
-  .advantages__research {
+@media (min-width: $desktop) {
+  .advantages__header {
+    &::after {
+      bottom: -90px;
+      width: 960px;
+      border-width: 90px 960px 0 0;
+    }
+  }
+
+  .advantages__promo {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .advantages__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .advantages__item {
+    margin-right: 45px;
+    width: 245px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__phones-list {
+    margin: 0;
+    margin-top: -15px;
+
+    img {
+      margin: 0;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .advantages__phones-item {
     display: block;
   }
 }

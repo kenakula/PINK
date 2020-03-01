@@ -22,60 +22,6 @@
 }
 
 .publish__settings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px 40px;
-  border-bottom: 1px solid $white-three;
-
-
-  svg {
-    fill: currentColor;
-  }
-}
-
-.publish__controls {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.publish__icon {
-  margin-right: 10px;
-  border: none;
-  background-color: transparent;
-  color: rgba($color: $grey, $alpha: 0.3);
-  font-size: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &--active {
-    color: $lipstick;
-  }
-}
-
-.publish__track {
-  position: relative;
-  margin: 0 auto;
-  width: 240px;
-  height: 2px;
-  background-color: $black;
-}
-
-.publish__thumb {
-  @include button-reset;
-
-  position: absolute;
-  left: 50%;
-  margin-left: -7px;
-  margin-top: -7px;
-  width: 14px;
-  height: 15px;
-  background-image: url("../../img/icon-editor-diagram-fill.svg");
-  background-color: $white;
-  color: $lipstick;
 
   svg {
     fill: currentColor;
@@ -85,7 +31,7 @@
 .publish__buttons {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .publish__button {
@@ -107,5 +53,30 @@
   &:disabled {
     color: $white-three;
     border-color: $white-three;
+  }
+}
+
+@media (min-width: $tablet) {
+  .publish__text {
+    padding: 50px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .publish__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .publish__settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .publish__buttons {
+    padding: 30px 0;
   }
 }

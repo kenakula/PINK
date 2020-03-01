@@ -1,5 +1,5 @@
 .research {
-  display: flex;
+  display: none;
   padding: 90px 34px 60px;
 }
 
@@ -57,4 +57,24 @@
   left: 19px;
   top: 55px;
   color: $lipstick;;
+}
+
+@media (min-width: $tablet) {
+  .research {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .research {
+    justify-content: center;
+  }
+
+  .research__timer {
+    margin-right: 90px;
+  }
+
+  .research__inner {
+    margin: 0;
+  }
 }

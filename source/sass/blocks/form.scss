@@ -34,6 +34,10 @@
   color: $lipstick;
   text-align: center;
   text-transform: uppercase;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .form__wrapper {
@@ -167,4 +171,125 @@
   &-star {
     color: $lipstick;
   }
+}
+
+@media (min-width: $tablet) {
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    & > .form__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .form__button {
+        margin-right: 40px;
+        width: 250px;
+      }
+
+    }
+  }
+
+  .form__field {
+    margin-bottom: 50px;
+    background-color: $white;
+
+    &--data {
+      order: -3;
+    }
+
+    &--app {
+      order: -2;
+    }
+
+    &--comment {
+      .form__inner {
+        padding: 20px 60px;
+      }
+    }
+
+    &--achievements {
+
+      .form__inner {
+        padding: 20px 60px;
+      }
+
+    }
+
+    &--contacts {
+      order: -1;
+
+      .form__inner {
+        padding: 20px 60px;
+      }
+
+      .form__wrapper {
+        position: relative;
+        flex-direction: column;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 60px;
+          height: 60px;
+          background-color: $white-three;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--phone::after {
+          background-image: url("../../img/icon-phone.svg");
+        }
+
+        &--email::after {
+          background-image: url("../../img/icon-mail.svg");
+        }
+      }
+
+      .form__label {
+        align-self: flex-start;
+      }
+    }
+
+    &:not(.form__field--data) {
+      padding: 0 20px;
+
+      .form__inner {
+        border: 2px solid $white-three;
+      }
+    }
+  }
+
+  .form__inner {
+    padding: 20px;
+  }
+
+  .form__wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form__input {
+    &--contacts {
+      margin-bottom: 10px;
+      order: -1;
+    }
+  }
+
+  .form__label {
+    &--data {
+      padding: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .form__legend {
+    display: block;
+    margin: -30px 0 40px;
+    background-color: $white;
+  }
+
+
 }

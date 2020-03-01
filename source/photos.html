@@ -19,7 +19,9 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo">
             <picture>
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
             </picture>
           </div>
         </div>
@@ -47,7 +49,7 @@
         <h1 class="inner-page__title">Фотографии пользователей</h1>
       </div>
       <p class="inner-page__text">
-        Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи!<br class="inner-page__line-break"> Видите, как не хватает ваших?
       </p>
       <section class="photos">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
@@ -55,7 +57,8 @@
           <li class="photos__item photos__item--panoram">
             <div class="photos__container">
               <picture>
-                <img class="photos__image" width="320" height="137" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                <img class="photos__image" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
               </picture>
             </div>
             <div class="photos__comment">
@@ -221,40 +224,64 @@
             </picture>
           </div>
           <div class="publish__settings">
-            <div class="publish__controls">
-              <button class="publish__icon publish__icon--crop publish__icon--active">
-                Обрезать
-                <svg width="44" height="44">
-                  <use xlink:href="#icon-editor-crop"></use>
-                </svg>
-              </button>
-              <button class="publish__icon publish__icon--fill">
-                Фильтр
-                <svg width="48" height="43">
-                  <use xlink:href="#icon-editor-fill"></use>
-                </svg>
-              </button>
-              <button class="publish__icon publish__icon--contrast">
-                Контраст
-                <svg width="32" height="32">
-                  <use xlink:href="#icon-editor-contrast"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="publish__range">
-              <div class="publish__track">
-                <button class="publish__thumb">
-                  Ползунок
-                  <svg width="14" height="14">
-                    <use xlink:href="#icon-editor-diagram-fill"></use>
-                  </svg>
-                </button>
+            <div class="publish__inner">
+              <div class="publish__sliders sliders">
+                <ul class="sliders__list">
+                  <div class="sliders__item sliders__item--crop sliders__item--active" id="sliderCrop">
+                    <button class="sliders__icon sliders__icon--crop sliders__icon--active" id="crop">
+                      Обрезать
+                      <svg width="44" height="44">
+                        <use xlink:href="#icon-editor-crop"></use>
+                      </svg>
+                    </button>
+                    <div class="sliders__track">
+                      <button class="sliders__thumb">
+                        Ползунок
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-editor-diagram-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="sliders__item sliders__item--fill" id="sliderFill">
+                    <button class="sliders__icon sliders__icon--fill" id="fill">
+                      Фильтр
+                      <svg width="48" height="43">
+                        <use xlink:href="#icon-editor-fill"></use>
+                      </svg>
+                    </button>
+                    <div class="sliders__track">
+                      <button class="sliders__thumb">
+                        Ползунок
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-editor-diagram-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="sliders__item sliders__item--contrast" id="sliderContrast">
+                    <button class="sliders__icon sliders__icon--contrast" id="contrast">
+                      Контраст
+                      <svg width="32" height="32">
+                        <use xlink:href="#icon-editor-contrast"></use>
+                      </svg>
+                    </button>
+                    <div class="sliders__track">
+                      <button class="sliders__thumb">
+                        Ползунок
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-editor-diagram-fill"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="publish__buttons">
-            <button class="publish__button publish__button--send">Отправить</button>
-            <button class="publish__button publish__button--cancel" disabled>Отмена</button>
+            <div class="publish__buttons">
+              <button class="publish__button publish__button--send">Запостить</button>
+              <button class="publish__button publish__button--cancel" disabled>Отмена</button>
+            </div>
           </div>
         </div>
       </section>

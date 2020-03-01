@@ -108,3 +108,33 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $tablet) {
+  .promo {
+    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .promo__slogan {
+    width: 30%;
+    margin-left: 3%;
+    font-size: 50px;
+  }
+
+  .promo__download {
+    margin-left: 7%;
+  }
+
+  .promo__button {
+    width: 290px;
+    height: 60px;
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .promo__text {
+    width: 95%;
+    font-family: $font-light;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

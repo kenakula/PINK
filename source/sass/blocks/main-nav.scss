@@ -4,13 +4,14 @@
   position: absolute;
   right: 20px;
   top: 32px;
-  width: 50px;
+  width: 40px;
   height: 4px;
   font-size: 0;
   background-color: $white;
   outline: none;
 
   &--close {
+    right: 30px;
     width: 4px;
     height: 4px;
     background-color: transparent;
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     left: 0;
-    width: 50px;
+    width: 40px;
     height: 4px;
     background-color: $white;
     transition: ease 0.1s transform;
@@ -92,5 +93,33 @@
   .main-nav__toggle--close::before,
   .main-nav__toggle--close::after {
     top: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    box-shadow: none;
+  }
+
+  .main-nav__item {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    font-family: $font-regular;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: initial;
   }
 }
