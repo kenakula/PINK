@@ -3,25 +3,34 @@
   padding: 0;
   border: none;
 
-  &--data,
-  &--contacts {
-    .form__wrapper:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
-
   &--achievements,
   &--app {
     background-color: $white-two;
-
-    .form__wrapper:not(:last-child) {
-      margin-bottom: 40px;
-    }
   }
 }
 
 .form__inner {
   padding: 40px 20px;
+}
+
+.form__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &--contacts,
+  &--data {
+    margin-bottom: 15px;
+  }
+
+  &--app,
+  &--achievements {
+    margin-bottom: 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__legend {
@@ -38,11 +47,6 @@
   &--contacts {
     display: none;
   }
-}
-
-.form__wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .form__label {
@@ -177,17 +181,27 @@
   .form {
     display: flex;
     flex-direction: column;
+  }
 
-    & > .form__inner {
+  .form__button {
+    margin: 0;
+    width: 250px;
+  }
+
+  .form__inner {
+    &--app,
+    &--contacts,
+    &--achievements,
+    &--comment {
+      padding: 20px 60px 40px;
+      border: 2px solid $white-three;
+    }
+
+    &--submit {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-
-      .form__button {
-        margin-right: 40px;
-        width: 250px;
-      }
-
     }
   }
 
@@ -203,50 +217,8 @@
       order: -2;
     }
 
-    &--comment {
-      .form__inner {
-        padding: 20px 60px;
-      }
-    }
-
-    &--achievements {
-
-      .form__inner {
-        padding: 20px 60px;
-      }
-
-    }
-
     &--contacts {
       order: -1;
-
-      .form__inner {
-        padding: 20px 60px;
-      }
-
-      .form__wrapper {
-        position: relative;
-        flex-direction: column;
-
-        &::after {
-          content: "";
-          position: absolute;
-          right: 0;
-          width: 60px;
-          height: 60px;
-          background-color: $white-three;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-
-        &--phone::after {
-          background-image: url("../../img/icon-phone.svg");
-        }
-
-        &--email::after {
-          background-image: url("../../img/icon-mail.svg");
-        }
-      }
 
       .form__label {
         align-self: flex-start;
@@ -255,20 +227,36 @@
 
     &:not(.form__field--data) {
       padding: 0 20px;
-
-      .form__inner {
-        border: 2px solid $white-three;
-      }
     }
   }
 
-  .form__inner {
-    padding: 20px;
-  }
-
   .form__wrapper {
+    position: relative;
     flex-direction: row;
     align-items: center;
+
+    &--contacts {
+      flex-direction: column;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 57px;
+        height: 57px;
+        background-color: $white-three;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--phone::after {
+      background-image: url("../../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../../img/icon-mail.svg");
+    }
   }
 
   .form__input {
@@ -287,9 +275,98 @@
 
   .form__legend {
     display: block;
-    margin: -30px 0 40px;
+    padding: 0 50px;
+    margin: -30px auto 40px;
+    width: fit-content;
     background-color: $white;
   }
 
+}
+
+@media (min-width: $desktop) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 130px;
+  }
+
+  .form__field {
+    width: 100%;
+
+    &--data,
+    &--app {
+      width: 48%;
+    }
+
+    &:not(.form__field--data) {
+      padding: 0;
+    }
+
+  }
+
+  .form__inner {
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    &--achievements {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+
+    &--submit {
+      width: 100%;
+    }
+  }
+
+  .form__wrapper {
+    &--contacts {
+      margin: 0;
+      width: 47%;
+    }
+
+    &--achievements {
+      width: 31%;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .form__legend {
+    &--app {
+      padding: 0 30px;
+      margin-top: -35px;
+    }
+
+    &--contacts,
+    &--achievements {
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: -50px;
+    }
+
+    &--achievements {
+      margin-left: -240px;
+    }
+  }
+
+  .form__label {
+    &--achievements {
+      padding-left: 50px;
+    }
+  }
 
 }

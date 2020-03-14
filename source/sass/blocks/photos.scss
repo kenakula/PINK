@@ -73,6 +73,7 @@
   .photos__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .photos__item {
@@ -93,5 +94,24 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 150px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .photos__item {
+    &--panoram {
+      &::before {
+        top: 5%;
+        right: 10%;
+      }
+    }
+
+    &:not(.photos__item--panoram) {
+      width: 30%;
+    }
+  }
+
+  .photos__list {
+    padding: 0 130px;
   }
 }

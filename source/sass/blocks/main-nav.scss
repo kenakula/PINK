@@ -99,6 +99,7 @@
 @media (min-width: $desktop) {
   .main-nav {
     display: flex;
+    min-width: 60%;
   }
 
   .main-nav__toggle {
@@ -107,6 +108,8 @@
 
   .main-nav__list {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     box-shadow: none;
   }
 

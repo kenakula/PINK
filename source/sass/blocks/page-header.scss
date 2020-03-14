@@ -33,11 +33,16 @@
 }
 
 @media (min-width: $desktop) {
-  .page-header__wrapper {
-    padding: 30px 130px 40px;
-  }
-
   .page-header__top {
     display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
   }
+
+  .page-header__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
 }

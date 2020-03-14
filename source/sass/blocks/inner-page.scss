@@ -32,10 +32,9 @@
 @media (min-width: $tablet) {
   .inner-page__wrapper {
     margin-top: -115px;
-    padding-top: 125px;
+    padding-top: 180px;
     min-height: 440px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-size: auto;
     background-position: top center;
   }
 
@@ -46,7 +45,7 @@
 
   .inner-page__text {
     padding: 70px 0;
-    width: 75%;
+    width: 52%;
     font-size: 18px;
     line-height: 30px;
   }
