@@ -3,6 +3,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .map__wrapper {
   position: relative;
   margin-top: -440px;
@@ -22,6 +26,10 @@
 }
 
 .map__picture {
+  width: 100%;
+}
+
+.map__iframe iframe {
   width: 100%;
 }
 

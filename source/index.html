@@ -17,13 +17,13 @@
     <header class="page-header page-header--transparent">
       <div class="page-header__top">
         <div class="page-header__wrapper">
-          <div class="page-header__logo">
+          <a class="page-header__logo">
             <picture>
               <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
             </picture>
-          </div>
+          </a>
         </div>
         <nav class="main-nav">
           <button class="main-nav__toggle">Открыть меню</button>
@@ -38,7 +38,7 @@
               <a href="form.html" class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -299,6 +299,9 @@
             <img class="map__picture" width="320" height="645" src="img/bg-map-mobile@1x.png" alt="карта офиса">
           </picture>
         </div>
+        <div class="map__iframe hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584211424465!5m2!1sru!2sru" width="320" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -329,6 +332,7 @@
         </a>
       </div>
     </footer>
+    <script src="js/map-fallback.min.js"></script>
     <script src="js/mobile-menu.min.js"></script>
   </body>
 </html>

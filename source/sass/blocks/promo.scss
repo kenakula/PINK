@@ -77,58 +77,40 @@
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom right 18px, center;
-    background-size: contain, cover;
+    background-size: 640px, cover;
   }
 
   .promo__inner {
     padding-top: 213px;
-    padding-left: 8%;
     background-color: transparent;
     background-image: none;
   }
 
   .promo__slogan {
     margin: 0;
-    width: 35%;
+    margin-left: 5%;
+    width: 320px;
     font-size: 40px;
     line-height: 40px;
   }
 
   .promo__download {
     margin-top: -120px;
+    margin-left: 5%;
     width: 320px;
     background-color: transparent;
   }
 
   .promo__button {
     margin-bottom: 45px;
-  }
-
-  .promo__list {
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: $tablet) {
-  .promo {
-    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
-  }
-
-  .promo__slogan {
-    width: 30%;
-    margin-left: 3%;
-    font-size: 50px;
-  }
-
-  .promo__download {
-    margin-left: 7%;
-  }
-
-  .promo__button {
     width: 290px;
     height: 60px;
     font-size: 21px;
     line-height: 18px;
+  }
+
+  .promo__list {
+    margin-bottom: 40px;
   }
 
   .promo__text {
@@ -145,8 +127,12 @@
     background-size: 950px, cover;
   }
 
-  .promo__download {
-    padding-left: 8%;
-    width: 35%;
+  .promo__slogan {
+    margin-left: 15%;
   }
+
+  .promo__download {
+    margin-left: 15%;
+  }
+
 }
