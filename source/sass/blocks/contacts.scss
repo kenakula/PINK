@@ -113,4 +113,17 @@
   .contacts__address {
     order: -1;
   }
+
+  .contacts__mail {
+    a {
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: rgba($color: $black, $alpha: 0.3);
+      }
+    }
+  }
 }

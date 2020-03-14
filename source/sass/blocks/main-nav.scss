@@ -120,9 +120,34 @@
   }
 
   .main-nav__link {
+    position: relative;
     font-family: $font-regular;
     font-size: 18px;
     line-height: 18px;
     text-transform: initial;
+    transition: color 0.3s ease-in;
+
+    &:not(.main-nav__link--active) {
+      &:hover {
+        color: $lipstick;
+      }
+
+      &:active {
+        color: rgba($color: $white, $alpha: 0.3);
+      }
+    }
+
+    &--active {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: $white;
+      }
+    }
   }
 }

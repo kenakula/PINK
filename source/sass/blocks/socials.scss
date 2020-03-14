@@ -23,6 +23,7 @@
   background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s ease-in;
 
   &--fb {
     background-image: url("../img/icon-facebook.svg");
@@ -30,5 +31,13 @@
 
   &--ut {
     background-image: url("../img/icon-youtube.svg");
+  }
+
+  &:hover {
+    border-color: $black;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

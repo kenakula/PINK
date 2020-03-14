@@ -135,4 +135,17 @@
     margin-left: 15%;
   }
 
+  .promo__button {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $lipstick;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba($color: $lipstick, $alpha: 0.3);
+    }
+  }
+
 }

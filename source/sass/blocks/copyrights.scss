@@ -17,5 +17,18 @@
     margin-left: 10px;
     fill: currentColor;
     color: $lipstick;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover {
+    svg {
+      color: $black;
+    }
+  }
+
+  &:active {
+    svg {
+      color: rgba($color: $black, $alpha: 0.3)
+    }
   }
 }
