@@ -20,12 +20,12 @@
   width: 40px;
   height: 100%;
   background-color: transparent;
-  background-image: url("../../img/icon-no.svg");
+  background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
   &--yes {
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
   }
 }
 
