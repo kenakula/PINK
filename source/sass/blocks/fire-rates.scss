@@ -9,17 +9,23 @@
 
 .fire-rates__list {
   position: relative;
+  min-height: 248px;
 
   @include list-reset;
 }
 
 .fire-rates__item {
   position: relative;
-  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
   overflow: hidden;
+  transition: opacity 0.5s ease;
 
   &--active {
-    display: block;
+    opacity: 1;
   }
 
   &--hit::before {
@@ -113,8 +119,11 @@
   }
 
   .fire-rates__item {
+    position: relative;
     display: block;
     flex-grow: 1;
+    width: 33%;
+    opacity: 1;
   }
 
   .fire-rates__controls {

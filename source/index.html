@@ -151,7 +151,7 @@
         <div class="reviews__wrapper">
           <ul class="reviews__list">
             <li class="reviews__item reviews__item--active">
-              <blockquote>
+              <div class="reviews__inner">
                 <cite class="reviews__author">
                   Николай Петров
                   <span class="reviews__occupation">
@@ -161,31 +161,41 @@
                 <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
-              </blockquote>
+              </div class="reviews__inner">
             </li>
             <li class="reviews__item">
-              <blockquote>
-                <cite class="reviews__author">Василий Ложкин</cite>
+              <div class="reviews__inner">
+                <cite class="reviews__author">
+                  Василий Ложкин
+                  <span class="reviews__occupation">
+                    42 года, хирург
+                  </span>
+                </cite>
                 <p class="reviews__text">
                   «Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis iste alias rerum cupiditate excepturi quidem atque, corrupti inventore labore.»
                 </p>
-              </blockquote>
+              </div class="reviews__inner">
             </li>
             <li class="reviews__item">
-              <blockquote>
-                <cite class="reviews__author">Сидр Васильев</cite>
+              <div class="reviews__inner">
+                <cite class="reviews__author">
+                  Сидр Васильев
+                  <span class="reviews__occupation">
+                    88 лет, пенсионер
+                  </span>
+                </cite>
                 <p class="reviews__text">
                   «Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quos reprehenderit blanditiis nemo. Aliquid quidem unde rem provident ullam, placeat accusantium tempora cupiditate itaque id assumenda voluptatum iure esse veniam.»
                 </p>
-              </blockquote>
+              </div class="reviews__inner">
             </li>
           </ul>
         </div>
         <div class="reviews__controls">
           <div class="reviews__dots">
-            <span class="reviews__dot reviews__dot--active"></span>
-            <span class="reviews__dot"></span>
-            <span class="reviews__dot"></span>
+            <span class="reviews__dot reviews__dot--active" data-slide="0"></span>
+            <span class="reviews__dot" data-slide="1"></span>
+            <span class="reviews__dot" data-slide="2"></span>
           </div>
         </div>
       </section>
@@ -262,9 +272,9 @@
           </ul>
           <div class="fire-rates__controls">
             <div class="fire-rates__dots">
-              <span class="fire-rates__dot"></span>
-              <span class="fire-rates__dot fire-rates__dot--active"></span>
-              <span class="fire-rates__dot"></span>
+              <span class="fire-rates__dot" data-slide="0"></span>
+              <span class="fire-rates__dot fire-rates__dot--active" data-slide="1"></span>
+              <span class="fire-rates__dot" data-slide="2"></span>
             </div>
           </div>
         </div>
@@ -341,5 +351,7 @@
     </footer>
     <script src="js/map-fallback.min.js"></script>
     <script src="js/mobile-menu.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/slider-rates.min.js"></script>
   </body>
 </html>
