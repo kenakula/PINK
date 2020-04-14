@@ -8,7 +8,6 @@
 *.sublime*
 *.code-workspace
 node_modules/
-build/
 npm-debug.*
 source/css/*.css
 source/css/*.map
